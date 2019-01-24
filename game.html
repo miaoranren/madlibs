@@ -4,12 +4,16 @@
   <title>A Compliment</title>
 </head>
 <body>
-   <form action="/madlib">
+   <form action="/madlib" method="POST">
    <p>Please answer me:</p>
-   <p>Person Name: <input type="text" name = "name"></p>
-   <p>Color: <input type="text" name = "color"></p>
-   <p>Noun: <input type="text" name = "noun"></p>
-   <p>Adjective: <input type="text" name = "adjective"></p>
+   <p>Person Name: <input type="text" name="name"></p>
+   <p>Color: 
+    <div> <input type="checkbox" name = "color" value="white">white</div>
+    <div> <input type="checkbox" name = "color" value="black">black</div>
+    <div> <input type="checkbox" name = "color" value="grey">grey</div>
+    </p>
+   <p>Noun: <input type="text" name="noun" ></p>
+   <p>Adjective: <input type="text" name="adjective" ></p>
    <p><input type="submit" name="submit"></p>
     </form>
 </body>
